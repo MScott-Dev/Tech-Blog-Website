@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-OffWhite">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/css/output.css">
     <title>BinaryBlend - Tech Blogs</title>
 </head>
+
 <body>
-    
-</body>
-</html>
+    <div class="navbar bg-myrtleGreen px-8 mb-8 nav shadow-xl">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="#F7B22C">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Homepage</a></li>
+                    <li><a>Dashboard</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-blender fa-lg hover:rotate-12" style="color:#E6E7EF"></i>
+            <a class="pl-3 text-3xl font-bold text-OffBlack">BinaryBlend</a>
+        </div>
+        <div class="navbar-center hidden lg:flex ">
+            <ul class="menu menu-horizontal px-1">
+                <li class="text-lg font-bold text-OffBlack"><a>Homepage</a></li>
+                <li class="text-lg font-bold text-OffBlack"><a>Dashboard</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <p class="pr-3 text-lg font-bold text-OffBlack "></p>
+            <a class="btn  bg-columbiaBlue hover:bg-columbiaBlue hover:scale-105 cursor-pointer text-OffBlack">LOGIN</a>
+        </div>
+    </div>
