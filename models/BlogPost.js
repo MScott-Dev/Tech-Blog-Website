@@ -31,14 +31,16 @@ BlogPost.init(
     user_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: "user",
+        model: "users",
         key: "id",
       },
     },
-    comments: {
-      type: DataTypes.STRING,
-      allowNull: true,
-      references: {},
+    blogComments: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: "comment",
+        key: "id",
+      },
     },
   },
   {
@@ -48,3 +50,5 @@ BlogPost.init(
     modelName: "blogPost",
   }
 );
+
+module.exports = BlogPost;
