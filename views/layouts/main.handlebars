@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../public/css/output.css">
+    <link rel="stylesheet" href="../../public/css/style.css">
     <title>BinaryBlend - Tech Blogs</title>
 </head>
 
@@ -36,6 +37,21 @@
         </div>
         <div class="navbar-end">
             <p class="pr-3 text-lg font-bold text-OffBlack "></p>
-            <a class="btn  bg-columbiaBlue hover:bg-columbiaBlue hover:scale-105 cursor-pointer text-OffBlack">LOGIN</a>
+            {{#if logged_in}}
+            <a href="/profile bg-columbiaBlue hover:bg-columbiaBlue hover:scale-105 cursor-pointer text-OffBlack">PROFILE</a> |
+            <a href="/logout" id="logout" class="btn no-button bg-columbiaBlue hover:bg-columbiaBlue hover:scale-105 cursor-pointer text-OffBlack">LOGOUT</a>
+            {{else}}
+            <a href="/login" class="btn  bg-columbiaBlue hover:bg-columbiaBlue hover:scale-105 cursor-pointer text-OffBlack">LOGIN</a>
+            {{/if}}
         </div>
     </div>
+
+
+    {{{ body }}}
+
+
+
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+</body>
