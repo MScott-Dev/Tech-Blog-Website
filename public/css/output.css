@@ -2163,6 +2163,10 @@ html {
   margin-top: 1.5rem;
 }
 
+.box-content {
+  box-sizing: content-box;
+}
+
 .flex {
   display: flex;
 }
@@ -2199,8 +2203,12 @@ html {
   height: 28rem;
 }
 
-.h-\[40rem\] {
-  height: 40rem;
+.h-\[45rem\] {
+  height: 45rem;
+}
+
+.h-\[59rem\] {
+  height: 59rem;
 }
 
 .h-full {
@@ -2231,8 +2239,8 @@ html {
   width: 13rem;
 }
 
-.w-\[29rem\] {
-  width: 29rem;
+.w-\[26rem\] {
+  width: 26rem;
 }
 
 .w-\[6rem\] {
@@ -2287,12 +2295,24 @@ html {
   align-items: flex-end;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-pretty {
+  text-wrap: pretty;
 }
 
 .rounded-box {
@@ -2305,6 +2325,10 @@ html {
 
 .border-b-2 {
   border-bottom-width: 2px;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
 }
 
 .border-none {
@@ -2518,6 +2542,16 @@ html {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-150:hover {
+  --tw-scale-x: 1.5;
+  --tw-scale-y: 1.5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
 }
 
 .hover\:border-green:hover {

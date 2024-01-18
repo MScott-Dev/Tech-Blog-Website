@@ -55,4 +55,31 @@
     </div>
 </section>
 
+{{#if blogPosts.length}}
+    <div class="col-md-6 blog-list">
+
+        {{#each blogPosts as |blog| }}
+        <section class="flex w-full justify-center align-middle py-3">
+            <div class="card w-4/5 bg-ashGray shadow-xl">
+                <div class="card-body">
+                    <div class="content-center justify-between items-center flex-wrap inline-flex border-b-2 border-AliceBlue">
+                        <h2 class="card-title text-3xl pb-2 text-OffBlack">{{title}}</h2>
+                        <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">
+                            <span data-id="{{blog.id}}">
+                                <i class="fa-solid fa-trash hover:scale-150 hover:cursor-pointer" style="color: #e73636;" data-id="{{blog.id}}"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <p class="mb-4 text-lg font-normal text-OffBlack">{{description}}</p>
+                    <div class="card-actions justify-end content-between items-end">
+                        <p class="text-lg font-normal text-OffBlack">Created By: {{user.name}} on {{format_date date_created}}
+                        </p>
+                        <a href="/post/{{blog.id}}" class="btn bg-columbiaBlue hover:bg-myrtleGreen hover:scale-105 cursor-pointer text-OffBlack">READ MORE <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{/each}}
+    </div>
+{{/if}}
 <script src="./js/profile.js"></script>
