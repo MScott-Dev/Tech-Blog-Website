@@ -38,7 +38,7 @@ BlogPost.init(
     blogComments: {
       type: DataTypes.INTEGER,
       references: {
-        model: "comment",
+        model: "comments",
         key: "id",
       },
     },
@@ -47,7 +47,7 @@ BlogPost.init(
     sequelize,
     timestamp: false,
     underscored: true,
-    modelName: "blogPost",
+    modelName: "blog_post",
   }
 );
 
