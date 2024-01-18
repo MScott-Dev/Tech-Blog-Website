@@ -22,7 +22,7 @@
                 </div>
                 <ul tabindex="0"
                     class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Homepage</a></li>
+                    <li href="/main"><a>Homepage</a></li>
                     <li><a>Dashboard</a></li>
                 </ul>
             </div>
@@ -38,7 +38,7 @@
         <div class="navbar-end">
             <p class="pr-3 text-lg font-bold text-OffBlack "></p>
             {{#if logged_in}}
-            <a href="/profile bg-columbiaBlue hover:bg-columbiaBlue hover:scale-105 cursor-pointer text-OffBlack">PROFILE</a> |
+            <a href="/profile bg-columbiaBlue hover:bg-columbiaBlue hover:scale-105 cursor-pointer text-OffBlack">{{name}}</a> |
             <a href="/logout" id="logout" class="btn no-button bg-columbiaBlue hover:bg-columbiaBlue hover:scale-105 cursor-pointer text-OffBlack">LOGOUT</a>
             {{else}}
             <a href="/login" class="btn  bg-columbiaBlue hover:bg-columbiaBlue hover:scale-105 cursor-pointer text-OffBlack">LOGIN</a>
