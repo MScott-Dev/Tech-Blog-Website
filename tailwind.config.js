@@ -2,7 +2,8 @@
 module.exports = {
   content: [
     "./views/layouts/*.{handlebars,html,js}",
-    "./views/*.{handlebars,html,js}" ],
+    "./views/*.{handlebars,html,js}",
+  ],
   theme: {
     extend: {},
     colors: {
@@ -17,7 +18,8 @@ module.exports = {
       OffBlack: "#0A100D",
       columbiaBlue: "#D0E5F0",
       green: "#05C78D",
-      darkGreen: "#048B63"
+      darkGreen: "#048B63",
+      cambridge: "#648F90",
     },
   },
   plugins: [require("daisyui")],

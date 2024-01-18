@@ -4,8 +4,50 @@
             <h2 class="card-title  border-b-2 text-3xl border-AliceBlue pb-2 text-OffBlack">{{title}}</h2>
             <p class="text-lg font-bold text-OffBlack text-pretty ">{{body}}</p>
             <div class="card-actions justify-end content-between items-end">
-                <p class="text-lg font-bold text-OffBlack border-t-2 border-AliceBlue">Created By: {{name}}</p>
+                <p class="text-lg font-bold text-OffBlack border-t-2 border-AliceBlue">Created By: {{user.name}}</p>
             </div>
         </div>
     </div>
 </section>
+
+<section class="flex w-full h-full justify-center align-middle py-3 ">
+    <div class="card w-3/5 bg-cambridge shadow-xl">
+        <form class="card-body bg-cambridge card comment-form">
+            <div class="form-control">
+                <label for="login-email" class="label">
+                    <span class="label-text font-bold text-OffBlack">Comment</span>
+                </label>
+                <textarea class="textarea h-24 textarea-bordered font-bold text-OffBlack my-3 resize-none"
+                    placeholder="Post Body" id="comment-text"></textarea>
+            </div>
+            <section class="justify-end inline-flex">
+                <button type="submit"
+                    class="btn w-2/5 just bg-columbiaBlue hover:bg-myrtleGreen hover:scale-105 cursor-pointer text-OffBlack">Comment</button>
+            </section>
+        </form>
+    </div>
+</section>
+
+{{#if comment.length}}
+<div class="col-md-6">
+
+    {{#each comment as |comment| }}
+        <section class="flex w-full justify-center align-baseline py-3">
+            <div class="card w-3/5 bg-cambridge shadow-xl">
+                <div class="card-body">
+        
+                    <p class="mb-4 text-lg font-bold text-OffBlack overflow-hidden">{{text}}
+                    </p>
+                    <div class="card-actions justify-end content-between items-end">
+                        <p class="text-lg font-bold text-OffBlack border-t-2 border-AliceBlue">Comment By: {{user.name}} on {{format_date date_created}}
+                        </p>
+        
+                    </div>
+                </div>
+            </div>
+        </section>
+    {{/each}}
+</div>
+{{/if}}
+
+<script src="/js/comment.js"></script>

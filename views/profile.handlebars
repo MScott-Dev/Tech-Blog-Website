@@ -42,7 +42,7 @@
                             <button class="btn bg-green shadow-lg hover:bg-darkGreen hover:border-green font-bold border-darkGreen new-blog-form" type="submit">Submit</button>
                         </div>
                     </form>
-                    <div class="modal-action">
+                    <div class="modal-action pt-24">
                         <form method="dialog">
                             <!-- if there is a button in form, it will close the modal -->
                             <button class="btn bg-columbiaBlue hover:bg-columbiaBlue hover:scale-105 cursor-pointer text-OffBlack">Close</button>
@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </dialog>
-            <button class="btn bg-red shadow-lg hover:bg-darkRed hover:border-red font-bold border-darkRed">Delete Profile</button>
+            {{!-- <button class="btn bg-red shadow-lg hover:bg-darkRed hover:border-red font-bold border-darkRed">Delete Profile</button> --}}
         </div>
     </div>
 </section>
@@ -64,7 +64,7 @@
                 <div class="card-body">
                     <div class="content-center justify-between items-center flex-wrap inline-flex border-b-2 border-AliceBlue">
                         <h2 class="card-title text-3xl pb-2 text-OffBlack">{{title}}</h2>
-                        <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">
+                        <button class="btn btn-sm btn-danger bg-columbiaBlue hover:bg-myrtleGreen" data-id="{{blog.id}}">
                             <span data-id="{{blog.id}}">
                                 <i class="fa-solid fa-trash hover:scale-150 hover:cursor-pointer" style="color: #e73636;" data-id="{{blog.id}}"></i>
                             </span>
