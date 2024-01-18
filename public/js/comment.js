@@ -12,7 +12,6 @@ const blog_id = document.querySelector("#comment-blog_id").value;
       headers: { "Content-Type": "application/json" },
     });
     if (response.ok) {
-      alert(response.statusText);
       document.location.reload();
     } else {
       alert(response.statusText);
