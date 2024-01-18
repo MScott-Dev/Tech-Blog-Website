@@ -6,7 +6,7 @@
                     <div class="w-[6rem] rounded-full shadow-xl">
                         <img src="https://picsum.photos/200" />
                     </div>
-                    <h2 class="card-title border-b-2 text-3xl border-AliceBlue pl-3 w-full">{{name}}</h2>
+                    <h2 class="card-title border-b-2 text-3xl border-AliceBlue pl-3 w-full font-bold text-OffBlack">{{name}}</h2>
                 </div>
 
             </div>
@@ -15,11 +15,42 @@
             <p class="pl-5 my-3 font-semibold">Username: {{name}}</p>
             <p class="pl-5 my-3 font-semibold">Email: {{email}}</p>
         </section>
-        <div class="card-actions h-[25rem] content-end justify-end p-4 ">
-            <button class="btn bg-green shadow-lg hover:bg-darkGreen hover:border-green font-bold border-darkGreen">New
-                Post</button>
-            <button class="btn bg-red shadow-lg hover:bg-darkRed hover:border-red font-bold border-darkRed">Delete
-                Profile</button>
+        <div class="card-actions h-[28rem] content-end justify-end p-4 ">
+            <button onclick="my_modal_5.showModal()" class="btn bg-green shadow-lg hover:bg-darkGreen hover:border-green font-bold border-darkGreen">New Post</button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle ">
+                <div class="modal-box h-[59rem] w-5/6 bg-ashGray glass">
+                    <form class="card-body bg-ashGray glass h-[45rem] new-blog-form">
+                        <div class="form-control">
+                            <label for="login-email" class="label">
+                                <span class="label-text font-bold text-OffBlack">Title</span>
+                            </label>
+                            <input type="text" placeholder="Title" class="input input-bordered w-[26rem] my-3 font-bold text-OffBlack" id="Blog-title" />
+                        </div>
+                        <div class="form-control">
+                            <label for="login-password" class="label mt-6">
+                                <span class="label-text font-bold text-OffBlack">Summary</span>
+                            </label>
+                            <input type="text" placeholder="Summary" class="input input-bordered w-[26rem] my-3 font-bold text-OffBlack" id="blog-desc" />
+                        </div>
+                        <div class="form-control">
+                            <label for="login-password" class="label mt-6">
+                                <span class="label-text font-bold text-OffBlack">Post</span>
+                            </label>
+                            <textarea class="textarea textarea-bordered w-[26rem] h-[20rem] font-bold text-OffBlack my-3 resize-none" placeholder="Post Body" id="blog-body"></textarea>
+                        </div>
+                        <div class="form-control mt-11">
+                            <button class="btn bg-green shadow-lg hover:bg-darkGreen hover:border-green font-bold border-darkGreen new-blog-form" type="submit">Submit</button>
+                        </div>
+                    </form>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn bg-columbiaBlue hover:bg-columbiaBlue hover:scale-105 cursor-pointer text-OffBlack">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+            <button class="btn bg-red shadow-lg hover:bg-darkRed hover:border-red font-bold border-darkRed">Delete Profile</button>
         </div>
     </div>
 </section>
