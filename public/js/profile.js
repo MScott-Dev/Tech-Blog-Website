@@ -10,17 +10,16 @@ console.log(description);
 console.log(body);
 
   if (title && description && body) {
-    const response = await fetch(`/api/blogs`, {
+    const response = await fetch('/api/blogs/create', {
       method: "POST",
       body: JSON.stringify({ title, description, body }),
       headers: {
         "Content-Type": "application/json",
       },
     });
-
+    console.log(response)
     if (response.ok) {
       document.location.replace("/profile");
-      console.log("it worked");
     } else {
       alert("Failed to create blog post");
     }
