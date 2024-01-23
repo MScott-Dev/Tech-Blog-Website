@@ -17,6 +17,7 @@
 
 ## Description <a name="Description"></a>
 <img src="https://imgur.com/ijdndCs.png" alt="blog-website" /> <br>
+Blog website that allows people to sign up, log in, post and comment on existing posts!
 
 
 
