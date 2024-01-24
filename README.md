@@ -24,7 +24,7 @@ Blog website that allows people to sign up, log in, post and comment on existing
 
 
 ## Usage <a name="Usage"></a>
-
+Post whatever on your mind! Learning a new language? Let people know and we what they have to say!
 
 ## Dependencies <a name="Dependencies"></a>
 <a href="" alt="">A link to the webpage</a>
