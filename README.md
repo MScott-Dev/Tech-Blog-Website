@@ -37,7 +37,7 @@ You could also open a pull request and I'll take a look at it!
 
 
 ## Authors <a name="Authors"></a>
-Matthew Scott
+Matthew rYAN Scott
 
 ## License <a name="License"></a>
 This project is licensed under the MIT License. Click on the badge at the top for more information!
