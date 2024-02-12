@@ -28,7 +28,7 @@ Binary Blend is a sleek and user-friendly blog website that caters to tech enthu
 Post whatever on your mind! Learning a new language? Let people know and we what they have to say! Read other posts made, comment any thoughts or question you have after.
 
 ## Dependencies <a name="Dependencies"></a>
-<a href="" alt="Blog website">A link to the webpage</a>
+<a href="https://safe-escarpment-21778-aea97de29b07.herokuapp.com/" alt="Blog website">A link to the webpage</a>
 
 
 ## Contributing <a name="Contributing"></a>
