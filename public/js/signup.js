@@ -6,6 +6,7 @@ const signupFormHandler = async (event) => {
   const password = document.querySelector("#signup-password").value;
 
   if (name && email && password) {
+
     const response = await fetch("/api/users/signup", {
       method: "POST",
       body: JSON.stringify({ name, email, password }),
@@ -15,7 +16,7 @@ const signupFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace("/profile");
     } else {
-      alert(response.statusText);
+      alert("Please check your email and make sure your password is between 8 and 32 characters");
     }
   }
 };

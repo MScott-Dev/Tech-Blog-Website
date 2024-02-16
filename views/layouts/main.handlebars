@@ -20,18 +20,14 @@
                             d="M4 6h16M4 12h8m-8 6h16" />
                     </svg>
                 </div>
-                <ul tabindex="0"
-                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li href="/"><a>Homepage</a></li>
-                    <li><a>Dashboard</a></li>
-                </ul>
+                
             </div>
             <i class="fa-solid fa-blender fa-lg hover:rotate-12" style="color:#E6E7EF"></i>
-            <a class="pl-3 text-3xl font-bold text-OffBlack">BinaryBlend</a>
+            <a href="/" class="pl-3 text-3xl font-bold text-OffBlack">BinaryBlend</a>
         </div>
         <div class="navbar-center hidden lg:flex ">
             <ul class="menu menu-horizontal px-1">
-                <li class="text-lg font-bold text-OffBlack"><a href="/">Homepage</a></li>
+                
             </ul>
         </div>
         <div class="navbar-end">
@@ -39,7 +35,7 @@
             {{#if logged_in}}
             <a href="/profile" class="btn no-button hover:bg-columbiaBlue hover:scale-105 cursor-pointer text-lg font-bold pr-2 text-OffBlack"> PROFILE </a>
             <p class="text-lg py-2 font-bold text-OffBlack">|</p>
-            <a href="/logout" id="logout" class="btn no-button bg-columbiaBlue hover:bg-columbiaBlue hover:scale-105 cursor-pointer pl-2 text-lg font-bold text-OffBlack">LOGOUT</a>
+            <a id="logout" class="btn no-button bg-columbiaBlue hover:bg-columbiaBlue hover:scale-105 cursor-pointer pl-2 text-lg font-bold text-OffBlack">LOGOUT</a>
             {{else}}
             <a href="/login" class="btn  bg-columbiaBlue hover:bg-columbiaBlue hover:scale-105 cursor-pointer text-OffBlack">LOGIN</a>
             {{/if}}
